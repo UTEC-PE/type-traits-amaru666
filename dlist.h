@@ -55,14 +55,14 @@ class DList {
             }
         }
              
-        void pop_front() {
+        void pop_front() { // Te olvidaste de controlar el caso vacío
             Node<T>* Tmp = head;
             head = head->next;
             delete Tmp;
             head->prev = nullptr;
         }
              
-        void pop_back() {
+        void pop_back() { // Te olvidaste de controlar el caso vacío
             Node<T>* tmp = tail;
             tail = tail->prev;
             delete tmp;
